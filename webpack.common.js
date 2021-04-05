@@ -2,12 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
-  devtool:
-    process.env.NODE_ENV === 'production'
-      ? 'source-map'
-      : 'cheap-module-source-map',
-  devServer: { contentBase: './dist' },
+  entry: './src/index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
