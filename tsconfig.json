@@ -1,0 +1,37 @@
+// Reference: https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    // Module resolution
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+
+    // Project ooptions
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "noEmit": true,
+    "target": "esnext",
+
+    // Strict checks
+    "alwaysStrict": true,
+    "strict": true,
+
+    // Linter checks
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Advanced
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+
+  // File inclusion
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
